@@ -52,7 +52,7 @@ public class Cheers {
                         anOrA = "an";
                         break;  
                     default:
-                        anOrA = "a";
+                        anOrA = "a ";
                 }
 
                 System.out.println("Give me " + anOrA + " " + letter + ": " + letter + "!");
