@@ -18,13 +18,23 @@ public  class  TestRandom {
 		if (countLess != 0 && countMore !=0) {
 			//System.out.println((double) countMore);
 			//System.out.println((double) countLess);
-			ratio = ((double) countMore) / ((double) countLess);
+			if (countLess >= countMore){
+				ratio = ((double) countMore) / ((double) countLess);
+			}
+			else{
+				ratio = ((double) countLess) / ((double) countMore);
+
+			}
+			System.out.println("> 0.5: " + countMore);
+			System.out.println("<= 0.5: " + countLess);
+			System.out.println("Ratio: " + ratio);
+
+		}
+		else {
+			System.out.println("> 0.5: " + countMore);
+			System.out.println("<= 0.5: " + countLess);
+
 		}
 
-		System.out.println("> 0.5: " + countMore);
-		System.out.println("<= 0.5: " + countLess);
-		if (ratio != 0.0) {
-			System.out.println("Ratio: " + ratio);
-		}
 	}
 }
