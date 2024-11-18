@@ -5,9 +5,19 @@ public class Cheers {
             String textToCheer = args[0];
             int numOfRoutins = Integer.parseInt(args[1]);
             Character letter = null;
+            Character convertHelper = null;
 
              //CONVERTING LOWER TO UPPER THEN EASY WAY
-            String newTextToCheer = textToCheer.toUpperCase();
+            //String newTextToCheer = textToCheer.toUpperCase();
+            String newTextToCheer = "";
+            //the long way to convert
+            for (int j = 0; j < textToCheer.length(); j++){
+                convertHelper = textToCheer.charAt(j);
+                if (convertHelper >= 'a' && convertHelper <= 'z'){
+                    convertHelper = (char)(convertHelper - 32);
+                }
+                newTextToCheer = newTextToCheer + convertHelper;
+            }
 
             String anOrA = "";
 
