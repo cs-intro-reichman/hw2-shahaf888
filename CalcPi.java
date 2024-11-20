@@ -4,17 +4,15 @@ public class CalcPi {
 	    double sumCalc = 1.0;
 		int numOfTimes = Integer.parseInt(args[0]);
 		int sheverToHishuv = 3;
+		
 		for (int i = 1; i < numOfTimes; i++){
 			if (i % 2 == 1){
 				sumCalc = sumCalc - (1.0 / sheverToHishuv);
-				//System.out.println(1.0 / sheverToHishuv);
 			}
 			else {
 				sumCalc = sumCalc + (1.0 / sheverToHishuv);
-				//System.out.println(1.0 / sheverToHishuv);
 			}
 			sheverToHishuv = sheverToHishuv + 2;
-			//System.out.println(sheverToHishuv);
 		}
 
 		double piJava = Math.PI;

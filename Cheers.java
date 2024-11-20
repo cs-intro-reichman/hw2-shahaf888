@@ -7,10 +7,8 @@ public class Cheers {
             Character letter = null;
             Character convertHelper = null;
 
-             //CONVERTING LOWER TO UPPER THEN EASY WAY
-            //String newTextToCheer = textToCheer.toUpperCase();
             String newTextToCheer = "";
-            //the long way to convert
+            //convert lpwer to upper with ascii
             for (int j = 0; j < textToCheer.length(); j++){
                 convertHelper = textToCheer.charAt(j);
                 if (convertHelper >= 'a' && convertHelper <= 'z'){

@@ -3,7 +3,6 @@ public class Collatz {
 	public static void main(String args[]) {
 	    int n = Integer.parseInt(args[0]);
 		String vOrC = args[1];
-
 		int i = 1;
 		int number = 1;
 		int counter = 1;
