@@ -14,7 +14,6 @@ public  class  TestRandom {
 			}
 		}
 		double ratio = 0.0;
-		//MAYBE WE SHOULD PUT ANOTHER IF IT DEPENDS ON THE GIT
 		if (countLess != 0 && countMore !=0) {
 			if (countLess >= countMore){
 				ratio = ((double) countMore) / ((double) countLess);
